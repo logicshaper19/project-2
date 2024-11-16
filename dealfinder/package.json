@@ -1,0 +1,14 @@
+{
+  "name": "dealfinder",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python -m uvicorn app.main:app --reload",
+    "install:all": "npm install && cd frontend && npm install",
+    "setup:db": "cd backend && python -m alembic upgrade head"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
